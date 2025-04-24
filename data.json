@@ -1,0 +1,20 @@
+{
+    "email": "eshan@example.com",
+    "password": "123456",
+    "role": "student",
+    "name": "Eshan Jogwar",
+    "performance": "A",
+    "rank": 5,
+    "percent": 85,
+    "attendance": [
+      {
+        "month": "January",
+        "days": [
+          { "day": 1, "present": [true, true, false, true, null] },
+          { "day": 2, "present": [true, true, false, true, null] },
+          { "day": 3, "present": [true, true, false, true, null] }
+        ]
+      }
+    ]
+  }
+  
