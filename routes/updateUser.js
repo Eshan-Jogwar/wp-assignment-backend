@@ -45,7 +45,8 @@ router.get("/:email/marks-tracker", async (req, res) => {
     }
 
     // Returning the user's marksTracker data
-    res.json({ marksTracker: result.marksTracker });
+    console.log(result)
+    res.json(result);
   } catch (error) {
     console.error(error);
     res.status(500).json({ error: "Internal server error" });
