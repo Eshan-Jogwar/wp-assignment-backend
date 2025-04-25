@@ -6,7 +6,7 @@ const router = express.Router();
 // PATCH route to update marksTracker for a specific user
 router.patch("/:email/marks-tracker", async (req, res) => {
   const email = req.params.email;
-  const { marksTracker } = req.body; // expects marksTracker array in request body
+  const { marksTracker } = req.body; 
 
   if (!marksTracker) {
     return res.status(400).json({ error: "Missing marksTracker in request body" });
