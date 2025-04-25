@@ -12,6 +12,7 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/userdata', require('./routes/user'));
 app.use('/api/userdata', require('./routes/updateUser'));
 app.use('/api/', require('./routes/timeTable'));
+app.use('/', require('./routes/fetchStudents'));
 
 connectToMongo().then(() => {
   app.listen(process.env.PORT, () => {
